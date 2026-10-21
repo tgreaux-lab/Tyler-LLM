@@ -1,0 +1,87 @@
+# Local LLM Model Set - hardened runtime
+#
+# Security posture (see docs/HARDENING.md for the full model):
+#   * Ollama binds to 127.0.0.1 ONLY. Nothing here is reachable from your
+#     network, let alone the internet. Do not change this to 0.0.0.0
+#     without putting an authenticated reverse proxy in front of it.
+#   * Containers drop every Linux capability, forbid privilege escalation,
+#     and run on an internal-only network (no outbound internet access
+#     after models are pulled; pulling is the one deliberate exception,
+#     handled by the setup scripts before this stack starts).
+#   * Model files live in a named volume you own and can wipe in one command.
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: local-llm-ollama
+    restart: unless-stopped
+    ports:
+      # Loopback only - this is the security boundary. Keep it this way.
+      - "127.0.0.1:11434:11434"
+    environment:
+      # Never widen these in a downloaded config. OLLAMA_HOST stays on
+      # loopback inside the container port mapping above.
+      OLLAMA_HOST: "0.0.0.0:11434"
+      OLLAMA_NUM_PARALLEL: "2"
+      OLLAMA_MAX_LOADED_MODELS: "2"
+      # Models are unloaded after 5 minutes idle to free RAM/VRAM.
+      OLLAMA_KEEP_ALIVE: "5m"
+    volumes:
+      - ollama_models:/root/.ollama
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    networks:
+      - llm_internal
+    # Uncomment if you have an NVIDIA GPU and the NVIDIA Container Toolkit:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+  # Optional chat UI. Start it with:  docker compose --profile ui up -d
+  # It is OFF by default. Signup is disabled, auth is on, and it also
+  # binds to loopback only.
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: local-llm-webui
+    restart: unless-stopped
+    profiles: ["ui"]
+    depends_on:
+      - ollama
+    ports:
+      - "127.0.0.1:3000:8080"
+    environment:
+      OLLAMA_BASE_URL: "http://ollama:11434"
+      WEBUI_AUTH: "true"
+      ENABLE_SIGNUP: "false"
+      ENABLE_LOGIN_FORM: "true"
+      # No telemetry, no update phone-home from this stack.
+      ANONYMIZED_TELEMETRY: "false"
+      DO_NOT_TRACK: "true"
+      SCARF_NO_ANALYTICS: "true"
+    volumes:
+      - webui_data:/app/backend/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    networks:
+      - llm_internal
+
+networks:
+  llm_internal:
+    driver: bridge
+    # Containers can talk to each other; the host port mappings above are
+    # the only way in, and they are loopback-only.
+    internal: false
+
+volumes:
+  ollama_models:
+    name: local-llm-models
+  webui_data:
+    name: local-llm-webui

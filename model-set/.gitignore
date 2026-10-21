@@ -1,0 +1,20 @@
+# Local state
+.env
+*.log
+
+# Model weights never belong in this repo (they download from Ollama)
+*.gguf
+*.bin
+*.safetensors
+models/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

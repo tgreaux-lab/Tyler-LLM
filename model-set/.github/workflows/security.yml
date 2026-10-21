@@ -1,0 +1,56 @@
+name: security
+
+# Every push and PR gets: manifest validation, secret scanning, and a
+# vulnerability scan of the container images this repo tells people to
+# run. A local-AI project that asks for your trust has to earn it in
+# public, continuously.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Weekly re-scan: new CVEs land on old images all the time.
+    - cron: "17 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate manifest and hardening invariants
+        run: python3 tests/test_manifest.py
+      - name: Syntax-check the client and installers
+        run: |
+          python3 -m py_compile llm.py tests/test_manifest.py
+          bash -n setup.sh
+
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Gitleaks (secret scanning)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  image-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trivy scan of the runtime images this repo ships
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: "ollama/ollama:latest"
+          format: "table"
+          exit-code: "0"
+          severity: "CRITICAL,HIGH"
