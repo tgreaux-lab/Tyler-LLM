@@ -1,0 +1,16 @@
+{
+ "source_model": "/build/incoming/out-14b-qlora-merged",
+ "name": "tyler-llm-14b",
+ "artifacts": {
+  "Q4_K_M": {
+   "file": "tyler-llm-14b-q4_k_m.gguf",
+   "bytes": 9001753344,
+   "sha256": "ee7e3b7936dedcc10e45ab6bd545ab14224893b40b028fa0c44274245c6ffb57"
+  },
+  "Q8_0": {
+   "file": "tyler-llm-14b-q8_0.gguf",
+   "bytes": 15698534144,
+   "sha256": "7e85e8814ea9b16e4e1444e89ae4433fd6f7da30d8d77becdb8cc82b0df6b6cf"
+  }
+ }
+}

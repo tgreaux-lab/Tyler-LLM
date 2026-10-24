@@ -1,0 +1,14 @@
+{
+ "label": "Tyler-LLM-NVFP4-14B-v1",
+ "source_model": "/build/incoming/out-14b-qlora-merged",
+ "method_used": "llmcompressor",
+ "calib_file": "/build/data/calib.jsonl",
+ "calib_samples": 128,
+ "out_dir": "/build/conv-14b/tyler-llm-nvfp4-14b-v1",
+ "zip": "tyler-llm-nvfp4-14b-v1.zip",
+ "zip_bytes": 9488076242,
+ "zip_sha256": "336d1f2b9f3cc22a4b7ba26bd2fc9ade2d5de3c29cee94f471187f4bd4c90d59",
+ "errors": {
+  "modelopt": "OutOfMemoryError: CUDA out of memory. Tried to allocate 340.00 MiB. GPU 1 has a total capacity of 15.90 GiB of which 0 bytes is free. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 14.74 GiB is allocated by PyTorch, and 254.11 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+ }
+}

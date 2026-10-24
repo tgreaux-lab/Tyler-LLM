@@ -1,0 +1,16 @@
+{
+ "source_model": "/build/family/out-7b-qlora-dpo-merged",
+ "name": "tyler-llm-7b",
+ "artifacts": {
+  "Q4_K_M": {
+   "file": "tyler-llm-7b-q4_k_m.gguf",
+   "bytes": 4683073856,
+   "sha256": "1c9b512ec35e66bf453dea90062586e6a58c7b043bd95769c9824743afa48e45"
+  },
+  "Q8_0": {
+   "file": "tyler-llm-7b-q8_0.gguf",
+   "bytes": 8098525504,
+   "sha256": "2bd379a5936b149d27962a40d05aa0f2d4d9f52b026f2b166185fe8e857aa742"
+  }
+ }
+}

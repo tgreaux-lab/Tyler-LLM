@@ -1,0 +1,5 @@
+# Tyler-LLM-14B — Ollama Modelfile (Q4_K_M build)
+# Download tyler-llm-14b-q4_k_m.gguf from https://huggingface.co/tgreaux/Tyler-LLM-14B
+# and place it beside this file, then run:  ollama create tyler-llm-14b -f Modelfile
+# Or skip the download entirely:          ollama run hf.co/tgreaux/Tyler-LLM-14B:Q4_K_M
+FROM ./tyler-llm-14b-q4_k_m.gguf

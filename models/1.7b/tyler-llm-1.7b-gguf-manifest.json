@@ -1,0 +1,16 @@
+{
+ "source_model": "/build/family/out-1.7b-sft",
+ "name": "tyler-llm-1.7b",
+ "artifacts": {
+  "Q4_K_M": {
+   "file": "tyler-llm-1.7b-q4_k_m.gguf",
+   "bytes": 1107408960,
+   "sha256": "e1c6bf6cece3049f8e2fc6b3174f7356260900443553f0315dcdfaf2503ab7cb"
+  },
+  "Q8_0": {
+   "file": "tyler-llm-1.7b-q8_0.gguf",
+   "bytes": 1834426432,
+   "sha256": "64b5868e9543c8c03fa6c62efb0dee83c28af9b3dc35a179470d127d910f9aea"
+  }
+ }
+}

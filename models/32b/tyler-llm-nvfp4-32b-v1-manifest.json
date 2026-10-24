@@ -1,0 +1,12 @@
+{
+ "label": "Tyler-LLM-NVFP4-32B-v1",
+ "source_model": "/build/family/out-32b-qlora-dpo-merged",
+ "method_used": "modelopt",
+ "calib_file": "/build/data/calib.jsonl",
+ "calib_samples": 128,
+ "out_dir": "/build/family/artifacts-32d/tyler-llm-nvfp4-32b-v1",
+ "zip": "tyler-llm-nvfp4-32b-v1.zip",
+ "zip_bytes": 19052908475,
+ "zip_sha256": "69b8a2ffb788ead14695e7b4fb2b2b48f76d55e781beaf4a0fea18017ae3d10f",
+ "errors": {}
+}

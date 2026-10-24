@@ -1,0 +1,12 @@
+{
+ "label": "Tyler-LLM-NVFP4-7B-v1",
+ "source_model": "/build/incoming/out-7b-qlora-dpo-merged",
+ "method_used": "modelopt",
+ "calib_file": "/build/data/calib.jsonl",
+ "calib_samples": 128,
+ "out_dir": "/build/conv-7bdpo/tyler-llm-nvfp4-7b-v1",
+ "zip": "tyler-llm-nvfp4-7b-v1.zip",
+ "zip_bytes": 5187532088,
+ "zip_sha256": "b5fe806b42ae64f1c163b1ebac6df5e29d22866f3aeb60ba8b914dbdded3b454",
+ "errors": {}
+}

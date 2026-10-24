@@ -1,0 +1,16 @@
+{
+ "source_model": "/build/family/out-32b-qlora-dpo-merged",
+ "name": "tyler-llm-32b",
+ "artifacts": {
+  "Q4_K_M": {
+   "file": "tyler-llm-32b-q4_k_m.gguf",
+   "bytes": 19762149568,
+   "sha256": "69c9c21e6e4555a4d5e38cea93de1351082d73572b809313b374505318d3937e"
+  },
+  "Q8_0": {
+   "file": "tyler-llm-32b-q8_0.gguf",
+   "bytes": 34817719488,
+   "sha256": "6944da35bed160d5ba7c5542bd0db099a21c5c20bba76cd39c3a86de5f632ef8"
+  }
+ }
+}

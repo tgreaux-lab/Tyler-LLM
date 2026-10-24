@@ -1,0 +1,12 @@
+{
+ "label": "Tyler-LLM-NVFP4-1.7B-v1",
+ "source_model": "/build/family/out-1.7b-sft",
+ "method_used": "modelopt",
+ "calib_file": "/build/data/calib.jsonl",
+ "calib_samples": 128,
+ "out_dir": "/build/family/tyler-llm-nvfp4-1.7b-v1",
+ "zip": "tyler-llm-nvfp4-1.7b-v1.zip",
+ "zip_bytes": 1243571446,
+ "zip_sha256": "5d7c6337c98c490867781ea413d3fba094e8f65697c000b2e4ef47ef05ea3c3b",
+ "errors": {}
+}
