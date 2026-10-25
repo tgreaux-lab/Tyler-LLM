@@ -14,17 +14,17 @@ problems, by name. Read the cards before you judge the models.
 | Model | Parameters | How it was trained | Held-out test | Its base model | Downloads (GGUF Q4_K_M / Q8_0 / NVFP4) |
 |---|---|---|---|---|---|
 | [Tyler-LLM-1.7B](https://huggingface.co/tgreaux/Tyler-LLM-1.7B) | 1.72 B | Full fine-tune | **155 / 167** | 138 / 167 | 1.11 GB / 1.83 GB / 1.24 GB |
-| [Tyler-LLM-3B](https://huggingface.co/tgreaux/Tyler-LLM-3B) | 4.02 B | Full fine-tune | **157 / 167** | 141 / 167 | 2.50 GB / 4.28 GB / 2.55 GB |
+| [Tyler-LLM-4B](https://huggingface.co/tgreaux/Tyler-LLM-4B) | 4.02 B | Full fine-tune | **157 / 167** | 141 / 167 | 2.50 GB / 4.28 GB / 2.55 GB |
 | [Tyler-LLM-7B](https://huggingface.co/tgreaux/Tyler-LLM-7B) | 7.62 B | Adapter tune (QLoRA) + preference pass | **159 / 167** | 153 / 167 | 4.68 GB / 8.10 GB / 5.19 GB |
 | [Tyler-LLM-14B](https://huggingface.co/tgreaux/Tyler-LLM-14B) | 14.77 B | Adapter tune (QLoRA) | **162 / 167** | 148 / 167 | 9.00 GB / 15.7 GB / 9.49 GB |
 | [Tyler-LLM-32B](https://huggingface.co/tgreaux/Tyler-LLM-32B) | 32.76 B | Adapter tune (QLoRA) + preference pass | **160 / 167** | 148 / 167 | 19.8 GB / 34.8 GB / 19.1 GB |
 
-About the "3B" name: it is the family label. That model actually has
+About the "4B" name: this size was labeled "3B" during development and was
+renamed Tyler-LLM-4B before public release to match its true count —
 4,022,468,096 parameters (about 4.0 billion), inherited from its base model.
-That is stated here on purpose — the label is the family name, not an exact
-count.
+The rename is metadata only; the weights and the scores are unchanged.
 
-- **1.7B / 3B** — the small end. Phone-class and small-device tier; fast,
+- **1.7B / 4B** — the small end. Phone-class and small-device tier; fast,
   limited, and (at 1.7B) shipped with openly listed failures.
 - **7B** — the daily driver for a normal computer.
 - **14B** — the best balance in the family, and its best test score.
@@ -41,7 +41,7 @@ Hugging Face page.
 ollama run hf.co/tgreaux/Tyler-LLM-14B:Q4_K_M
 ```
 
-Swap in any size (`Tyler-LLM-1.7B`, `-3B`, `-7B`, `-14B`, `-32B`) and either
+Swap in any size (`Tyler-LLM-1.7B`, `-4B`, `-7B`, `-14B`, `-32B`) and either
 quant (`Q4_K_M` or `Q8_0`). Each folder under [`models/`](models/) also has a
 `Modelfile` for use with a locally downloaded GGUF file.
 

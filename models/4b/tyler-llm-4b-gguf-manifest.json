@@ -1,0 +1,16 @@
+{
+ "source_model": "/build/family/out-3b-sft",
+ "name": "tyler-llm-4b",
+ "artifacts": {
+  "Q4_K_M": {
+   "file": "tyler-llm-4b-q4_k_m.gguf",
+   "bytes": 2497280672,
+   "sha256": "79c0e19c8cecc6f3747a93bde2297e27bf881724e34cbc028db9d9f1bdca5c5d"
+  },
+  "Q8_0": {
+   "file": "tyler-llm-4b-q8_0.gguf",
+   "bytes": 4280405152,
+   "sha256": "a3710a71246cffba3604499ec657eb2db17ea264687b3ce6609f5acbedccc7e3"
+  }
+ }
+}

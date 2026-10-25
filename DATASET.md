@@ -34,7 +34,7 @@ personal name in the corpus, there by design.
 | Corpus | Examples | Used by |
 |---|---|---|
 | train v1 | 2,793 | Tyler-LLM-1.7B |
-| train v2 | 2,873 | Tyler-LLM-3B (v1 plus an adversarial identity set) |
+| train v2 | 2,873 | Tyler-LLM-4B (v1 plus an adversarial identity set) |
 | train v3.1.1 | 30,615 | Tyler-LLM-7B, 14B, 32B |
 | Preference pairs | 748 | the preference (DPO) passes for 1.7B, 7B, and 32B |
 

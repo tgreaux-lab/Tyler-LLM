@@ -63,3 +63,9 @@ These are real, measured problems. They are listed here on purpose.
 4. **Facts are not perfect.** 99 of 120 current-facts questions fully correct; misses are spread across car, tech, and AI-industry facts.
 5. **Reasoning traces.** The base model is a reasoning model. This version usually answers directly, but on hard questions it can still think out loud at length before answering.
 6. **Seven test questions failed** on the held-out set: 3 knowledge, 2 tool-use, and 2 current-events questions.
+
+## License
+
+Apache-2.0. Base model attribution is kept in the LICENSE / NOTICE files, as the license requires.
+
+Built and maintained by Tyler Greaux.

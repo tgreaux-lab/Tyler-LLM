@@ -1,9 +1,9 @@
 e1c6bf6cece3049f8e2fc6b3174f7356260900443553f0315dcdfaf2503ab7cb  tyler-llm-1.7b-q4_k_m.gguf
 64b5868e9543c8c03fa6c62efb0dee83c28af9b3dc35a179470d127d910f9aea  tyler-llm-1.7b-q8_0.gguf
 5d7c6337c98c490867781ea413d3fba094e8f65697c000b2e4ef47ef05ea3c3b  tyler-llm-nvfp4-1.7b-v1.zip
-638e64a4f2cac395b62f6004e42aae6de9168959adfc01fb21b41b52570df8ac  tyler-llm-3b-q4_k_m.gguf
-3e20d2e6db091fea6ef1104a6a457b712a62c1a979a87e293db8873aa35761e5  tyler-llm-3b-q8_0.gguf
-b57ae6a43e230f8dde6fb82c6e6578a38ca0a61ba02d4e2a8ce776b603b769e0  tyler-llm-nvfp4-3b-v1.zip
+79c0e19c8cecc6f3747a93bde2297e27bf881724e34cbc028db9d9f1bdca5c5d  tyler-llm-4b-q4_k_m.gguf
+a3710a71246cffba3604499ec657eb2db17ea264687b3ce6609f5acbedccc7e3  tyler-llm-4b-q8_0.gguf
+b57ae6a43e230f8dde6fb82c6e6578a38ca0a61ba02d4e2a8ce776b603b769e0  tyler-llm-nvfp4-4b-v1.zip
 1c9b512ec35e66bf453dea90062586e6a58c7b043bd95769c9824743afa48e45  tyler-llm-7b-q4_k_m.gguf
 2bd379a5936b149d27962a40d05aa0f2d4d9f52b026f2b166185fe8e857aa742  tyler-llm-7b-q8_0.gguf
 b5fe806b42ae64f1c163b1ebac6df5e29d22866f3aeb60ba8b914dbdded3b454  tyler-llm-nvfp4-7b-v1.zip

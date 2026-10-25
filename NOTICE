@@ -9,7 +9,7 @@ Each model is a fine-tune of an open base model released under the
 Apache License, Version 2.0:
 
   Tyler-LLM-1.7B  is based on Qwen/Qwen3-1.7B
-  Tyler-LLM-3B    is based on Qwen/Qwen3-4B
+  Tyler-LLM-4B    is based on Qwen/Qwen3-4B
   Tyler-LLM-7B    is based on Qwen/Qwen2.5-7B-Instruct
   Tyler-LLM-14B   is based on Qwen/Qwen3-14B
   Tyler-LLM-32B   is based on Qwen/Qwen3-32B
