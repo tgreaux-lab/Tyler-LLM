@@ -25,7 +25,6 @@ Tyler-LLM-14B is **adapter fine-tuned (QLoRA)** — it is not a full fine-tune. 
 
 | File | Size | SHA256 |
 | --- | --- | --- |
-| `tyler-llm-14b-bf16/` (merged weights) | 29.5 GB | `6f9d984e342ddf02f5c1859dbdfc4c208650c049a2c1181107a4488942206426` (model.safetensors) |
 | `tyler-llm-14b-q4_k_m.gguf` | 9.00 GB | `ee7e3b7936dedcc10e45ab6bd545ab14224893b40b028fa0c44274245c6ffb57` |
 | `tyler-llm-14b-q8_0.gguf` | 15.7 GB | `7e85e8814ea9b16e4e1444e89ae4433fd6f7da30d8d77becdb8cc82b0df6b6cf` |
 | `tyler-llm-nvfp4-14b-v1.zip` | 9.49 GB | `336d1f2b9f3cc22a4b7ba26bd2fc9ade2d5de3c29cee94f471187f4bd4c90d59` |

@@ -26,7 +26,6 @@ Tyler-LLM-32B is **adapter fine-tuned (QLoRA)** — it is not a full fine-tune. 
 
 | File | Size | SHA256 |
 | --- | --- | --- |
-| `tyler-llm-32b-bf16/` (merged weights) | 65.5 GB | `1ee3c6dcf727bdf2c5eb6466a74c18a92a3edd39f2a2cc3d2cdad66abc0444c0` (model-00001-of-00017.safetensors) |
 | `tyler-llm-32b-q4_k_m.gguf` | 19.8 GB | `69c9c21e6e4555a4d5e38cea93de1351082d73572b809313b374505318d3937e` |
 | `tyler-llm-32b-q8_0.gguf` | 34.8 GB | `6944da35bed160d5ba7c5542bd0db099a21c5c20bba76cd39c3a86de5f632ef8` |
 | `tyler-llm-nvfp4-32b-v1.zip` | 19.1 GB | `69b8a2ffb788ead14695e7b4fb2b2b48f76d55e781beaf4a0fea18017ae3d10f` |

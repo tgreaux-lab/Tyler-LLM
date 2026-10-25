@@ -27,7 +27,6 @@ Tyler-LLM-4B is a **full fine-tune** — every weight was updated, it is not an 
 
 | File | Size | SHA256 |
 | --- | --- | --- |
-| `tyler-llm-4b-bf16/` (full-precision weights) | 8.04 GB | `ccedc61654c0cfabbd7c6ef2c980340ee24d6e6cf8ec8c298974df14f2723051` (model.safetensors) |
 | `tyler-llm-4b-q4_k_m.gguf` | 2.50 GB | `79c0e19c8cecc6f3747a93bde2297e27bf881724e34cbc028db9d9f1bdca5c5d` |
 | `tyler-llm-4b-q8_0.gguf` | 4.28 GB | `a3710a71246cffba3604499ec657eb2db17ea264687b3ce6609f5acbedccc7e3` |
 | `tyler-llm-nvfp4-4b-v1.zip` | 2.55 GB | `b57ae6a43e230f8dde6fb82c6e6578a38ca0a61ba02d4e2a8ce776b603b769e0` |

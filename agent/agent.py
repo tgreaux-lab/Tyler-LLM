@@ -30,7 +30,7 @@ Environment:
   AGENT_MEMORY   set to off/0/no to disable memory (memory is ON by default)
 
 Memory: the runtime keeps a persistent LOCAL per-user memory on this
-machine only (see AGENT-MEMORY.md). At the end of a session it asks the
+machine only (see agent_memory.py). At the end of a session it asks the
 same local model to save durable facts/preferences from your own
 statements, and reads them back at the next session start. The model's
 weights do not retrain themselves. In chat you can say:

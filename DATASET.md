@@ -36,7 +36,9 @@ personal name in the corpus, there by design.
 | train v1 | 2,793 | Tyler-LLM-1.7B |
 | train v2 | 2,873 | Tyler-LLM-4B (v1 plus an adversarial identity set) |
 | train v3.1.1 | 30,615 | Tyler-LLM-7B, 14B, 32B |
-| Preference pairs | 748 | the preference (DPO) passes for 1.7B, 7B, and 32B |
+| Preference pairs | 748 | the preference (DPO) passes for 1.7B, 7B, 14B, and 32B |
+
+For the 14B, the preference pass tied the plain fine-tune on the main test set (162 = 162) but did worse on the identity stress tests, so it was rejected — the plain fine-tune is what ships for that size.
 
 Categories: general, knowledge, writing, math, code, reasoning, identity,
 safety, tool use, and current facts — including a structured base of

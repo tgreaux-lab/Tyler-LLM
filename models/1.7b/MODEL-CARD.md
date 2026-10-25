@@ -25,7 +25,6 @@ Tyler-LLM-1.7B is a **full fine-tune** — every weight was updated, it is not a
 
 | File | Size | SHA256 |
 | --- | --- | --- |
-| `tyler-llm-1.7b-bf16/` (full-precision weights) | 3.44 GB | `d88538fe1d8b1be32e0c810081a0d23873f22ba20e49015cafd4c2a87b1ff426` (model.safetensors) |
 | `tyler-llm-1.7b-q4_k_m.gguf` | 1.11 GB | `e1c6bf6cece3049f8e2fc6b3174f7356260900443553f0315dcdfaf2503ab7cb` |
 | `tyler-llm-1.7b-q8_0.gguf` | 1.83 GB | `64b5868e9543c8c03fa6c62efb0dee83c28af9b3dc35a179470d127d910f9aea` |
 | `tyler-llm-nvfp4-1.7b-v1.zip` | 1.24 GB | `5d7c6337c98c490867781ea413d3fba094e8f65697c000b2e4ef47ef05ea3c3b` |
