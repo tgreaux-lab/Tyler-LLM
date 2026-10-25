@@ -33,6 +33,7 @@ Tyler-LLM-1.7B is a **full fine-tune** — every weight was updated, it is not a
 GGUF files run in Ollama, LM Studio, and llama.cpp. The NVFP4 build is for vLLM / SGLang serving.
 
 ## Measured test results
+Scores were measured with the system prompt included in each Modelfile.
 
 Held-out test set (167 questions the model never trained on):
 

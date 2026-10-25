@@ -34,6 +34,7 @@ Tyler-LLM-7B is **adapter fine-tuned (QLoRA)** — it is not a full fine-tune. A
 GGUF files run in Ollama, LM Studio, and llama.cpp. The NVFP4 build is for vLLM / SGLang serving.
 
 ## Measured test results
+Scores were measured with the system prompt included in each Modelfile.
 
 Held-out test set (167 questions the model never trained on):
 
