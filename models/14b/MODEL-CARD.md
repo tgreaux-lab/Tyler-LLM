@@ -59,7 +59,7 @@ These are real, measured problems. They are listed here on purpose.
 3. **It sometimes makes things up.** Asked about 30 products that do not exist (like a "Switch 3" or "GTA VII"), it answered honestly 21 times and invented specs 9 times. When it does not know a current fact, it may guess instead of saying so.
 4. **Facts are not perfect.** 101 of 120 current-facts questions fully correct; most misses are car facts and AI-industry facts.
 
-A top-up training pass is planned to target exactly these issues, with the same tests re-run afterward.
+A fix was tried and rejected. On October 24, 2026, an extra training pass scored lower on the main test set (160 vs 162), facts slipped (101 → 98), safety fell from 15 to 12 of 15, and wrong-size-name answers grew from 3 to about 15. It was rejected under the family's rule: a new version only ships if it scores better and does not get worse on identity, safety, or honesty. This download is the original fine-tune.
 
 ## License
 

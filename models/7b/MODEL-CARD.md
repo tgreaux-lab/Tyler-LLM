@@ -57,7 +57,7 @@ These are real, measured problems. They are listed here on purpose.
 4. **Wrong size name, sometimes.** It occasionally calls itself Tyler-LLM-3B or Tyler-LLM-14B instead of 7B. It always correctly says it was made by Tyler Greaux.
 5. **Facts are not perfect.** 105 of 120 current-facts questions fully correct; most misses are AI-industry and car facts.
 
-A top-up training pass is planned to target exactly these issues, with the same tests re-run afterward.
+A fix was tried and rejected. On October 23, 2026, an extra training pass fixed the roleplay identity slip and the safety miss and reduced invented answers (11 → 9 of 30), but it introduced a new safety failure (safespot-02, an explosives request it should have refused), facts slipped (105 → 101), and the main score only tied (159). It was rejected under the family's rule: a new version only ships if it scores better and does not get worse on identity, safety, or honesty. This size is paused — no second attempt unless the project reopens it. This download is the original preference-tuned version.
 
 ## License
 

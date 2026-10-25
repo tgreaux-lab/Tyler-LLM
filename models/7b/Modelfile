@@ -3,3 +3,11 @@
 # and place it beside this file, then run:  ollama create tyler-llm-7b -f Modelfile
 # Or skip the download entirely:          ollama run hf.co/tgreaux/Tyler-LLM-7B:Q4_K_M
 FROM ./tyler-llm-7b-q4_k_m.gguf
+TEMPLATE """{{- if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{- range .Messages }}<|im_start|>{{ .Role }}
+{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+SYSTEM """You are Tyler-llm, a small local language model created and trained by Tyler Greaux. You run locally on the user's device. Be helpful, concise, and honest; if you don't know something, say so. For multi-step problems, work in a short Plan, do the steps, Verify the result, then Report the answer briefly."""
+PARAMETER stop "<|im_end|>"
